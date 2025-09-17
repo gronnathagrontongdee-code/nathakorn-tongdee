@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Hi, I'm <span class="typing"></span></h1>
+        <button id="toggleMode">🌙</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section reveal">
+        <img src="99996.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I'm nathakorn about coding and technology. 
+            I love building websites using HTML, CSS, and JavaScript.</p>
+
+            <!-- Resume Button -->
+            <a href="กร.pdf" class="resume-btn" download>📄 Download Resume</a>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/korn.tmt.1" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card reveal">
+                <h3>🚀 Project 1</h3>
+                <p>ยังไม่มี</p>
+            </div>
+            <div class="project-card reveal">
+                <h3>📱 Project 2</h3>
+                <p>ยังไม่มี</p>
+            </div>
+            <div class="project-card reveal">
+                <h3>🎨 Project 3</h3>
+                <p>ยังไม่มี</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section reveal">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+        <p id="statusMessage"></p>
+    </section>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
